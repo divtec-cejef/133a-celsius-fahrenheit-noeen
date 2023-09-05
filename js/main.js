@@ -10,12 +10,12 @@ let tempC = document.querySelector("#tempC");
 let buttonConvertir = document.querySelector("button.convertir");
 let resultat = document.querySelector(".resultat");
 
-if(isNaN(parseFloat(tempC.value))) {
-   alert(`Erreur: Entrez un nombre.`);
-} else {
-   buttonConvertir.addEventListener("click", () => {
-      resultat.innerHTML =`Résultat : ${parseFloat(tempC.value) * 9 / 5 + 32} °C`;
-   });
-}
 
+buttonConvertir.addEventListener("click", () => {
+   if(isNaN(parseFloat(tempC.value))) {
+      alert(`Erreur ! Entrez un nombre.`)
+   } else {
+      resultat.innerHTML =`Résultat : ${parseFloat(tempC.value) * 9 / 5 + 32} °C`;
+   }
+});
 
