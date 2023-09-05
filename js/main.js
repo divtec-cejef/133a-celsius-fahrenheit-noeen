@@ -6,16 +6,9 @@
  */
 'use strict'; // Demande un interprétation stricte du code
 
-let tempC = document.querySelector("#tempC");
-let buttonConvertir = document.querySelector("button.convertir");
-let resultat = document.querySelector(".resultat");
+let tempC = prompt("Température en Celsius :");
 
-buttonConvertir.addEventListener("click", () => {
-   resultat.value ="Résultat : ";
-   resultat.innerHTML += parseFloat(tempC.value) * 9 / 5 + 32 + "°C";
-});
-
-/**t empC = parseFloat(tempC);
+tempC = parseInt(tempC);
 
 if(isNaN(tempC)) {
     alert("Erreur : entrez un nombre. ");
@@ -23,4 +16,4 @@ if(isNaN(tempC)) {
     let tempF = tempC * 9 / 5 + 32;
     alert(tempC + "°C = " + tempF + "°F");
 }
-*/
+
