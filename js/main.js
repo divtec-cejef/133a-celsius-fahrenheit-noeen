@@ -15,12 +15,3 @@ buttonConvertir.addEventListener("click", () => {
    resultat.innerHTML += parseFloat(tempC.value) * 9 / 5 + 32 + "°C";
 });
 
-/**t empC = parseFloat(tempC);
-
-if(isNaN(tempC)) {
-    alert("Erreur : entrez un nombre. ");
-} else {
-    let tempF = tempC * 9 / 5 + 32;
-    alert(tempC + "°C = " + tempF + "°F");
-}
-*/
