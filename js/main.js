@@ -11,6 +11,6 @@ let buttonConvertir = document.querySelector("button.convertir");
 let resultat = document.querySelector(".resultat");
 
 buttonConvertir.addEventListener("click", () => {
-   resultat.value =`Résultat : ${parseFloat(tempC.value) * 9 / 5 + 32} °C`;
+   resultat.innerHTML =`Résultat : ${parseFloat(tempC.value) * 9 / 5 + 32} °C`;
 });
 
