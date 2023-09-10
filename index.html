@@ -6,12 +6,18 @@
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-<h1>Convertisseur Celsius > Fahrenheit</h1>
-<label for="tempC">Saisir une température °C</label>
-<input type="text" id="tempC">
-<button class="convertir">Convertir en °F</button>
-<p class="resultat">Résultat : </p>
-
+<div class="convertisseur">
+    <h1>Convertisseur Celsius > Fahrenheit</h1>
+    <label for="tempC">Saisir une température °C</label>
+    <input type="text" id="tempC">
+    <button class="convertir">Convertir en °F</button>
+    <button class="reinitialiser">Réinitialiser</button>
+    <p class="resultat">Résultat : </p>
+</div>
+<div class="liste">
+    <h2>Historique :</h2>
+    <ul class="historique"></ul>
+</div>
 <!-- JavaScript -->
 <script src="js/main.js"></script>
 </body>
