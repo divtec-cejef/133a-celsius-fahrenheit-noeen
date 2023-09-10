@@ -17,7 +17,7 @@ buttonConvertir.addEventListener("click", () => {
    if(isNaN(parseFloat(tempC.value))) {
       alert(`Erreur ! Entrez un nombre.`)
    } else {
-      resultat.innerHTML =`Résultat : ${parseFloat(tempC.value) * 9 / 5 + 32}°F`;
+      resultat.innerHTML =`Résultat : <strong>${parseFloat(tempC.value) * 9 / 5 + 32}°F</strong>`;
       historique.innerHTML += `<li>${parseFloat(tempC.value)}°C = ${parseFloat(tempC.value) * 9 / 5 + 32} °F`;
    }
 });
